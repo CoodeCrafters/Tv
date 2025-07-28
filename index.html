@@ -44,7 +44,7 @@
       errorEl.textContent = "❌ Missing 'id' parameter in URL. Example: ?id=1813787";
     } else {
       const video = document.getElementById('video');
-      const streamUrl = `http://127.0.0.1:3000/stream?id=${nimbusId}`;
+      const streamUrl = `https://ptv-check.onrender.com/stream?id=${nimbusId}`;
 
       if (Hls.isSupported()) {
         const hls = new Hls();
